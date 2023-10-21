@@ -63,7 +63,6 @@ header nav a.active{
   min-height: 100%;
   width: 100%;
   /* display: flex; */
-  background-color: var(--secondary);
   /* overflow-y: scroll; */
 }
 
@@ -73,6 +72,8 @@ header nav a.active{
   display: flex;
   flex-direction: column;
   border-right: 1px solid salmon; */
+  background-color: var(--secondary);
+
 }
 
 .form {

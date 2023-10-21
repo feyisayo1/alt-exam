@@ -5,13 +5,13 @@ export default function RepoDetail(){
     const repo = useLoaderData()
     console.log(repo);
     return(
-        <div style={{color:"red"}}>
+        <div>
            {!repo.id  ? 
            <NotFound/> :
                 <div className="repo_wrapper">
                     <div className="card-details">
                         {/* <div> */}
-                            <div className="img"  data-aos="fade-right ">
+                            <div className="img">
                                 <img src="https://avatars.githubusercontent.com/u/45480719?v=4" alt="Owners Profile picture"  />
                             </div>
                             <p  className="repo_detail_card_title"><b>Repo Name:</b> <span>{repo.full_name}</span></p> 
