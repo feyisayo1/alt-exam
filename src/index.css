@@ -298,7 +298,7 @@ header nav a.active{
 /* repo details  */
 .repo_wrapper {
   background: var(--secondary);
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   place-items: center;
 
