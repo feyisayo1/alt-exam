@@ -3,7 +3,7 @@ import NotFound from "../NotFound";
 export default function RepoDetail(){
     // const {id} = useParams()
     const repo = useLoaderData()
-    console.log(repo);
+    // console.log(repo);
     return(
         <div>
             <div className="repo-wrapper-container">
