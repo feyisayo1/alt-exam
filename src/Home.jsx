@@ -73,18 +73,11 @@ const Home = () => {
                   <FontAwesomeIcon icon={faLinkedin} bounce size="2xl" style={{color: "#bc4123",}} />
                 </a>
               </div>
-
-            
-
               <h3 style={{color:"white", marginTop:"20px"}}>Check out my 
                   <NavLink to="404" style={{ borderRadius:"4px", color:"#bc4123", fontSize:"30px"}} > 404 page </NavLink>
                   here.
               </h3>
-
-              
             </div>
-        
-           
           </div>
         </div>
 
