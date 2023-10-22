@@ -298,7 +298,7 @@ header nav a.active{
 /* repo details  */
 .repo_wrapper {
   background: var(--secondary);
-  /* height: 100vh; */
+  height: 100vh;
   display: grid;
   place-items: center;
 
@@ -482,4 +482,112 @@ span{
 
 .profile{
   background-color: var(--secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query  */
+
+
+@media screen and (max-width:400px){
+  .home p {
+    font-size: 2.5rem;
+  }
+  header nav{
+    gap: 2px;
+  }
+
+  .home{
+    flex-direction: column-reverse;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .home{
+    flex-direction: column-reverse;
+  }
+  .home p{
+    font-size: 2rem;
+  }
+  .home h2{
+    font-size: 2rem;
+  }
+
+  .home h1{
+    font-size: 15px;
+  }
+
+  header nav{
+    gap: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .home{
+    flex-direction: column-reverse;
+  }
+  /* .pic{
+    width: 40%;
+  } */
+
+  .results-container{
+    flex-direction: columns;
+  }
+
+
+  .card{
+    width: 100%;
+    /* margin: 0 auto; */
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .home{
+    /* flex-direction: column-reverse; */
+  }
+  .home p{
+    font-size: 3rem;
+  }
+  .home h2{
+    font-size: 3rem;
+  }
+
+  .home h1{
+    font-size: 13px;
+  }
+  .pic{
+    width: 40%;
+  }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+.pic{
+  width: 70%;
+}
+.home p{
+  font-size: 3rem;
+}
+.home h2{
+  font-size: 3rem;
+}
+
+.home h1{
+  font-size: 15px;
+}
 }

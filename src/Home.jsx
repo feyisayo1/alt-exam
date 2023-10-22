@@ -50,7 +50,7 @@ const Home = () => {
                 <h1>
                   I am Frontend Developer who is passionate about crafting visually stunning digital experiences that delight users and exceed expectations.<br/>
                   With meticulous attention to detail and pixel-perfect precision, I bring designs to life through clean, efficient, and maintainable code.<br/>
-                  My expertise in HTML, CSS, JavaScript, and VueJs enables me to develop responsive, intuitive, and highly functional interfaces that seamlessly integrate with backend systems.<br/>
+                  My expertise in HTML, CSS, JavaScript, VueJs and ReactJS enables me to develop responsive, intuitive, and highly functional interfaces that seamlessly integrate with backend systems.<br/>
                 </h1>
               </div>
               <div className="pic" data-aos="fade-left">
