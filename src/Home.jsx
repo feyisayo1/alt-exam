@@ -6,6 +6,10 @@ import me from './assets/me.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 
 const Home = () => {
@@ -31,7 +35,7 @@ const Home = () => {
                     <nav>
                         <NavLink to="/"><h3>Home</h3></NavLink>
                         <NavLink to="repo"><h3>Repo</h3></NavLink>
-                        <NavLink to="profile"><h3>Profile</h3></NavLink>
+                        {/* <NavLink to="profile"><h3>Profile</h3></NavLink> */}
                     </nav>
                 </header>
             </div>
@@ -57,9 +61,30 @@ const Home = () => {
                 <img src={me} alt=""/>
               </div>
             </div>
-            {/* <FontAwesomeIcon icon={faXTwitter} bounce style={{color: "#bc4123",}} /> */}
-            
-            {/* <FontAwesomeIcon icon="fa-brands fa-x-twitter" bounce style={{color: "#bc4123",}} /> */}
+            <div className='social-wrapper'>
+              <div className='social'>
+                <a href="https://twitter.com/_ichbindavid" target='_blank'>
+                  <FontAwesomeIcon icon={faTwitter} bounce size="2xl" style={{color: "#bc4123",}} />
+                </a>
+                <a href="https:github.com/feyisayo1" target='_blank'>
+                  <FontAwesomeIcon icon={faGithub} bounce size="2xl" style={{color: "#bc4123",}} />
+                </a>
+                <a href="https://www.linkedin.com/in/ogunleye-david-8a9b22194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target='_blank'>
+                  <FontAwesomeIcon icon={faLinkedin} bounce size="2xl" style={{color: "#bc4123",}} />
+                </a>
+              </div>
+
+              <h3 style={{color:"white"}}>Check out my 
+                  <NavLink to="404" style={{ padding:"6px", borderRadius:"4px", color:"#bc4123", fontSize:"30px" }} >404 page</NavLink>
+                  here.
+              </h3>
+
+              
+
+              
+            </div>
+          
+           
           </div>
         </div>
 

@@ -170,13 +170,7 @@ header nav a.active{
   margin-left: 5px;
 }
 
-.repo-details-container {
-  height: 100%;
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .details-row {
   height: 20px;
@@ -298,24 +292,37 @@ header nav a.active{
 /* repo details  */
 .repo_wrapper {
   background: var(--secondary);
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   place-items: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* width: 50%; */
+  /* margin:0 auto; */
+  /* margin-top: 20px; */
 
 }
 
 
+.repo-wrapper-container {
+  background: var(--secondary);
+  height: 100vh;
+}
+
 
 .card-details{
   background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 40px;
   
   /* justify-content: center; */
   /* align-items: center; */
   /* margin: auto; */
-  /* width: 30%; */
+  width: 30%;
   /* text-align: center; */
   /* border-block: 50px; */
   padding: 20px;
+  border-radius: 20px;
 
 }
 
@@ -485,8 +492,29 @@ span{
 }
 
 
+.myrepo{
+  text-align:start;
+  color:white;
+  margin:20px 0px;
+}
 
 
+.social-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+.social{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 
@@ -510,7 +538,14 @@ span{
   .home{
     flex-direction: column-reverse;
   }
+  .repo_wrapper{
+    /* height: 100vh; */
+  }
+
+
 }
+
+
 
 
 
@@ -532,6 +567,34 @@ span{
   header nav{
     gap: 20px;
   }
+ 
+}
+
+
+@media screen and (max-width: 633px) {
+  .myrepo{
+    font-size: 25px;
+  }
+  .check{
+    /* width: 50%; */
+    gap: 20px ;
+  }
+  .social{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .myrepo{
+    font-size: 18px;
+  }
+  .check{
+    font-size: 10px;
+    /* width: 50%; */
+    gap: 10px ;
+  }
+
+  
 }
 
 
@@ -552,13 +615,13 @@ span{
     width: 100%;
     /* margin: 0 auto; */
   }
+  .repo_wrapper{
+    /* height: 100vh; */
+  }
 }
 
 
 @media screen and (max-width: 992px) {
-  .home{
-    /* flex-direction: column-reverse; */
-  }
   .home p{
     font-size: 3rem;
   }
@@ -572,7 +635,11 @@ span{
   .pic{
     width: 40%;
   }
+  /* .card-details{
+    width: 60%;
+  } */
 }
+
 
 
 
@@ -589,5 +656,12 @@ span{
 
 .home h1{
   font-size: 15px;
+}
+.repo_wrapper{
+  /* height: fit-content; */
+}
+
+.card-details{
+  width: 90%;
 }
 }
