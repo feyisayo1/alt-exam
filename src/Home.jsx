@@ -29,16 +29,16 @@ const Home = () => {
 
         <div className="landing-page-container">
           <div className="left-side">
-            <div className="nav" data-aos="fade-down">
+            {/* <div className="nav" data-aos="fade-down">
                 <h1 style={{textAlign:"start", color:"white", margin:"20px 0px"}}>OG</h1>
                 <header>
                     <nav>
                         <NavLink to="/"><h3>Home</h3></NavLink>
                         <NavLink to="repo"><h3>Repo</h3></NavLink>
-                        {/* <NavLink to="profile"><h3>Profile</h3></NavLink> */}
+                        <NavLink to="profile"><h3>Profile</h3></NavLink>
                     </nav>
                 </header>
-            </div>
+            </div> */}
 
             {/* {repos && <ReposList repos={repos} title="My Repo List"/>}
             {loading && <Loading/>}

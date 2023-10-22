@@ -12,16 +12,16 @@ const ReposList = () => {
     return ( 
         <div>
             <div style={{background:"#2b3452", height:"100%" }}>
-                <div className="nav">
+                {/* <div className="nav">
                         <h1 className="myrepo">My Repo List</h1>
                         <header>
                             <nav className="check">
                                 <NavLink to="/"><h3>Home</h3></NavLink>
                                 <NavLink to="/repo"><h3>Repo</h3></NavLink>
-                                {/* <NavLink to="profile"><h3>Profile</h3></NavLink> */}
+                                <NavLink to="profile"><h3>Profile</h3></NavLink>
                             </nav>
                         </header>
-                </div>
+                </div> */}
                 <div className='results-container'>
                     {error && <div className='error'><p>{error}</p></div>}
                     {loading && <Loading/>}
