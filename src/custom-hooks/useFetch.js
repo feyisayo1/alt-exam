@@ -5,7 +5,7 @@ const useFetch = (url) => {
     const [loading, setLoading] = useState(true)
     const [error, setError] = useState(null)
     
-    console.log(repos);
+    // console.log(repos);
     useEffect(() => {
         //using fetch here 
         // fetch(url)
@@ -18,7 +18,7 @@ const useFetch = (url) => {
             .then(response => {
                 // console.log(response)
                 if(response.status === 200){
-                    console.log(response.data)
+                    // console.log(response.data)
                     setRepos(response.data)
                     setLoading(false)
                     setError(null)
@@ -38,9 +38,9 @@ const useFetch = (url) => {
 
     }, [url])
 
-    const info = repos.map(repo => repo.name)
-    console.log(info, repos);
-  return { repos, loading, error, info }
+    // const info = repos.map(repo => repo.name)
+    // console.log(info, repos);
+  return { repos, loading, error}
 
 
 }
