@@ -13,7 +13,9 @@ import RootLayout from './Layouts/RootLayout';
 import RepoDetail, { RepoDetailLoader } from './pages/RepoDetail';
 import NotFound from './NotFound';
 import ReposList from './RepoList';
-import Profile from './Profile';
+import Count from './Count';
+import ErrorBoundary from './ErrorBoundary';
+// import { ErrorBoundary } from './ErrorBoundary';
 // import RepoDetail from './pages/RepoDetail';
 
 // const App = () => {
@@ -32,7 +34,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<RootLayout/>}>
       <Route index element= {<Home/>}/>
       <Route path='/repo' element={<ReposList/>}/>
-      <Route path='/profile' element={<Profile/>}/>
+      <Route path='/count' element={<Count/>} errorElement={<ErrorBoundary/>}/>
       
 
       <Route>
@@ -47,12 +49,16 @@ const router = createBrowserRouter(
           element={<RepoDetail/>}
           loader={RepoDetailLoader}
         />
-
+        
+        
+  
         <Route
-          path='/repo/profile'
-          element={<Profile/>}
+          path='/repo/count'
+          element={<Count/>}
         />
       </Route>
+
+      
     
 
       <Route path="*" element={<NotFound/>}/>
@@ -63,7 +69,9 @@ const router = createBrowserRouter(
 
 function App(){
   return (
-    <RouterProvider router={router}/>
+    <>
+      <RouterProvider router={router}/>    
+    </>
   )
 }
  

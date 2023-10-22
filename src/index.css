@@ -16,6 +16,28 @@
   scroll-behavior: smooth;
 }
 
+  /* scollbar  */
+  ::-webkit-scrollbar{
+    width: 7px;
+  }
+
+  /* track */
+  ::-webkit-scrollbar-track{
+    box-shadow: 0 0 5px white;
+    border-radius: 7px;
+  }
+
+  /* handle */
+  ::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: 5px;
+  }
+
+  /* handle on hover */
+  ::-webkit-scrollbar-thumb:hover{
+    /* background: #423030; */
+  }
+
 .nav{
   display: flex;
   justify-content: space-between;
@@ -520,8 +542,69 @@ span{
 
 
 
+/* error boundary */
 
+.firstLayer{
+  background: var(--secondary);
+  height: 100vh;
+  /* padding: 40px 40px 40px 40px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.wrapper{
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 30px;
+ 
+  /* width: 30%; */
+  /* margin: 0 auto; */
+}
+
+.wrapper h2{
+  color: white;
+  padding: 20px 0;
+
+}
+
+.wrapper div{
+  text-align: center;
+}
+
+button{
+  color: white ;
+  outline: none;
+  background: var(--primary);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.errorbound{
+  background: var(--secondary);
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorbound div{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 50px;
+  /* width: 20%; */
+  border-radius: 10px;
+}
+
+.errorbound a{
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: bold;
+
+}
 
 
 
