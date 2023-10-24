@@ -74,10 +74,10 @@ const Home = () => {
                 </a>
               </div>
               <h3 style={{color:"white", marginTop:"20px"}}>Check out my 
-                  <NavLink to="404" style={{ borderRadius:"4px", color:"#bc4123", fontSize:"30px", textDecoration:"underline"}} > 404 page </NavLink>
+                  <NavLink to="404" style={{ borderRadius:"4px", color:"#bc4123", fontSize:"30px", borderBottom:"3px solid #bc4123"}} > 404 page </NavLink>
               </h3>
               <h3 style={{color:"white", marginTop:"20px"}}>Check out my 
-                  <NavLink to="count" style={{ borderRadius:"4px", color:"#bc4123", fontSize:"30px", textDecoration:"underline"}} > Error boundary page </NavLink>
+                  <NavLink to="count" style={{ borderRadius:"4px", color:"#bc4123", fontSize:"30px", borderBottom:"3px solid #bc4123"}} > Error boundary page </NavLink>
               </h3>
             </div>
           </div>
