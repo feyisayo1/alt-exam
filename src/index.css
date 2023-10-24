@@ -76,6 +76,7 @@ header nav a.active{
   border-bottom: 3px solid var(--primary);
 }
 
+
 .page {
   height: 100vh;
   background: var(--secondary);
