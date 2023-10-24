@@ -27,10 +27,12 @@ const Home = () => {
       <div className="page">
                     {/* <h1 style={{textAlign:"start", color:"red", margin:"20px 0px"}}>My Repo List</h1> */}
 
+        
         <div className="landing-page-container">
         {error ? 
           <div className='error'><p>{error}</p></div>
            :
+
               <div className="left-side">
               {/* <div className="nav" data-aos="fade-down">
                   <h1 style={{textAlign:"start", color:"white", margin:"20px 0px"}}>OG</h1>
