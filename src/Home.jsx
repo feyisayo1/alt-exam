@@ -76,8 +76,8 @@ const Home = () => {
                     <FontAwesomeIcon icon={faLinkedin} bounce size="2xl" style={{color: "#bc4123",}} />
                   </a>
                 </div>
-                <h3 style={{color:"white", marginTop:"20px"}}>Check out my <NavLink to="404" style={{color:"#bc4123", fontSize:"30px", borderBottom:"3px solid #bc4123"}} > 404 page </NavLink></h3>
-                <h3 style={{color:"white", marginTop:"20px"}} className='chk'>Check out my <NavLink to="count" style={{color:"#bc4123", fontSize:"30px", borderBottom:"3px solid #bc4123"}} > Error boundary page </NavLink></h3>
+                <h3 style={{color:"white", marginTop:"20px", fontSize:"22px", fontWeight:"500"}}>Check out my <NavLink to="404" style={{color:"#bc4123", fontSize:"30px", textDecoration:"underline"}} > 404 page </NavLink></h3>
+                <h3 style={{color:"white", marginTop:"20px", fontSize:"22px", fontWeight:"500"}} className='chk'>Check out my <NavLink to="count" style={{color:"#bc4123", fontSize:"30px",  textDecoration:"underline"}} > Error boundary page </NavLink></h3>
               </div>
             </div>
           }
