@@ -8,7 +8,7 @@ const Count  = () => {
     }
 
     if(number > 5){
-        throw Error ('count is too high')
+        throw Error ('Count too high')
     }
 
     return ( 
