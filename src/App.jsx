@@ -53,7 +53,7 @@ const router = createBrowserRouter(
         
   
         <Route
-          path='/repo/count'
+          path='/count'
           element={<Count/>}
         />
       </Route>
