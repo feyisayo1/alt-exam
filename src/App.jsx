@@ -50,8 +50,6 @@ const router = createBrowserRouter(
           loader={RepoDetailLoader}
         />
         
-        
-  
         <Route
           path='/count'
           element={<Count/>}
