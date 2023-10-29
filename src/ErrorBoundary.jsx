@@ -10,7 +10,7 @@ const ErrorBoundary = () => {
         <h1>Error!!!</h1>
         <h2>{error.message}</h2>
         <h2>Back to the
-          <Link to="/"> homepage</Link>
+          <Link to="/">homepage</Link>
         </h2>
       </div>
     </div>
